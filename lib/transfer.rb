@@ -11,7 +11,7 @@ class Transfer
   end
 
   def valid?
-    self.status == "open" && self.balance > 0
+   true if sender.valid? == true && receiver.valid? == true
   end
 
   # def execute_transaction
